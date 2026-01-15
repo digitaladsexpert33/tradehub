@@ -1,22 +1,38 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gold Market Education</title>
 
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
 :root{
   --neon-blue:#00e5ff;
   --neon-soft:rgba(0,229,255,.6);
 }
 
-.gta-wrapper{
-  min-height:100vh;
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  background:#000;
+  font-family:'Poppins',sans-serif;
+}
+
+.wrapper{
+  min-height:100svh;
   display:flex;
   align-items:center;
   justify-content:center;
-  background:#000;
-  font-family:'Poppins',sans-serif;
   padding:20px;
 }
 
-.gta-card{
+.card{
   max-width:440px;
   width:100%;
   background:linear-gradient(180deg,#050505,#0b0b0b);
@@ -26,15 +42,15 @@
   box-shadow:
     0 0 40px rgba(0,229,255,.15),
     inset 0 0 25px rgba(255,255,255,.03);
-  animation:neoEnter .9s ease forwards;
+  animation:fadeUp .9s ease forwards;
 }
 
-@keyframes neoEnter{
+@keyframes fadeUp{
   from{opacity:0;transform:translateY(30px) scale(.96)}
   to{opacity:1;transform:none}
 }
 
-.gta-logo{
+.logo{
   width:74px;
   height:74px;
   margin:0 auto 20px;
@@ -44,7 +60,7 @@
   box-shadow:0 0 25px rgba(0,229,255,.8);
 }
 
-.gta-logo img{
+.logo img{
   width:100%;
   height:100%;
   border-radius:50%;
@@ -52,7 +68,7 @@
   background:#000;
 }
 
-.gta-card h1{
+h1{
   font-size:26px;
   font-weight:700;
   margin:0 0 6px;
@@ -60,21 +76,21 @@
   text-shadow:0 0 14px var(--neon-blue);
 }
 
-.gta-sub{
+.subtitle{
   font-size:14px;
-  color:#cfd8dc;
+  color:#e0f7fa;
   margin-bottom:24px;
   text-shadow:0 0 10px var(--neon-soft);
 }
 
-.gta-list{
+ul{
   list-style:none;
   padding:0;
   margin:22px 0;
   text-align:left;
 }
 
-.gta-list li{
+ul li{
   font-size:14px;
   padding:12px 14px;
   margin-bottom:12px;
@@ -85,11 +101,11 @@
   box-shadow:inset 0 0 12px rgba(0,229,255,.08);
 }
 
-.gta-cta{
+.cta{
   display:block;
   margin-top:26px;
   background:linear-gradient(135deg,#00e5ff,#2979ff);
-  color:#000!important;
+  color:#000;
   text-decoration:none;
   padding:16px;
   border-radius:16px;
@@ -99,84 +115,93 @@
   box-shadow:
     0 0 25px rgba(0,229,255,.9),
     0 0 50px rgba(0,229,255,.6);
-  transition:.3s ease;
 }
 
-.gta-cta:hover{
+.cta:hover{
   transform:translateY(-2px) scale(1.02);
-  box-shadow:
-    0 0 35px rgba(0,229,255,1),
-    0 0 70px rgba(0,229,255,.9);
 }
 
-.gta-note{
+.note{
   margin-top:18px;
   font-size:11px;
   color:#b0bec5;
   line-height:1.6;
-  text-shadow:0 0 8px rgba(176,190,197,.6);
 }
 
-/* 🔥 Clickable Agency Line */
-.gta-agency{
-  margin-top:16px;
-  font-size:12px;
-  font-weight:600;
-  letter-spacing:.4px;
-}
-
-
-.gta-footer{
-  margin-top:18px;
+.footer{
+  margin-top:20px;
   font-size:11px;
   color:#90a4ae;
   line-height:1.7;
-  text-shadow:0 0 6px rgba(144,164,174,.6);
 }
 
-.gta-footer a{
+.footer a{
   color:#00e5ff;
   text-decoration:none;
-  text-shadow:0 0 10px rgba(0,229,255,.9);
 }
 </style>
 
-<div class="gta-wrapper">
-  <div class="gta-card">
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '880589011124165');
+fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=880589011124165&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
 
-    <div class="gta-logo">
-      <img src="https://ads.shrirammedia.live/wp-content/uploads/2025/12/photo_2025-12-29-00.26.30.jpeg" alt="TradeHubFX Logo">
+  
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="card">
+
+    <div class="logo">
+      <img src="logo.png" alt="TradeHubFX Logo" loading="lazy">
     </div>
 
     <h1>TradeHubFX</h1>
-    <div class="gta-sub">Advanced Gold Market Understanding for Serious Traders
-</div>
-
-    <ul class="gta-list">
-      <li>✔ Structured approach to observing the XAUUSD market</li>
-       <li>✔ Clear understanding of price action behavior</li>
-      <li>✔ Focus on discipline, process, and consistency</li>
-      <li>✔ Community learning with serious traders only</li>
-     
-    </ul>
-
-    <a href="https://t.me/+nKx68fGzJQ81YmM9" target="_blank" class="gta-cta">
-      Unlock Free Access on Telegram
-
-    </a>
-
-    <div class="gta-note">
-      Educational purpose only • No tips • No guarantees • No investment advice
+    <div class="subtitle">
+      Educational Gold Market Community for Serious Learners
     </div>
 
-    <!-- ✅ Clickable Agency Line -->
-    
+    <ul>
+      <li>✔ Educational discussion on XAUUSD market behavior</li>
+      <li>✔ Focus on price action concepts and structure</li>
+      <li>✔ Discipline, risk awareness, and trading psychology</li>
+      <li>✔ Community learning — no signals or tips</li>
+    </ul>
 
-    <div class="gta-footer">
+    <a class="cta"
+       href="https://t.me/+nKx68fGzJQ81YmM9"
+       target="_blank"
+       aria-label="Join free TradeHubFX Telegram education group">
+       Join Free Telegram Community
+    </a>
+
+    <div class="note">
+      This platform is for educational purposes only.  
+      We do not provide financial advice, investment recommendations, or profit guarantees.  
+      Trading involves risk and may not be suitable for all individuals.
+    </div>
+
+    <div class="footer">
       <div>
-        <a href="https://elitepips.online/terms/">Terms</a> |
-        <a href="https://elitepips.online/privacy/">Privacy</a> |
-        <a href="https://elitepips.online/disclaimer/">Disclaimer</a>
+        <a href="https://elitepips.online/terms/" target="_blank">Terms</a> |
+        <a href="https://elitepips.online/privacy/" target="_blank">Privacy</a> |
+        <a href="https://elitepips.online/disclaimer/" target="_blank">Disclaimer</a>
       </div>
       <div>
         Not affiliated with Meta Platforms, Inc.
@@ -185,3 +210,6 @@
 
   </div>
 </div>
+
+</body>
+</html>
