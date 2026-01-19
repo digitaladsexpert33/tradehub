@@ -115,6 +115,7 @@ ul li{
   box-shadow:
     0 0 25px rgba(0,229,255,.9),
     0 0 50px rgba(0,229,255,.6);
+  transition:.25s ease;
 }
 
 .cta:hover{
@@ -141,26 +142,25 @@ ul li{
 }
 </style>
 
-  <!-- Meta Pixel Code -->
+<!-- Meta Pixel -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '880589011124165');
-fbq('track', 'PageView');
+s.parentNode.insertBefore(t,s)
+}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','880589011124165');
+fbq('track','PageView');
 </script>
-<noscript>
-  <img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=880589011124165&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
 
-  
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=880589011124165&ev=PageView&noscript=1"/>
+</noscript>
+
 </head>
 
 <body>
@@ -183,15 +183,11 @@ fbq('track', 'PageView');
       <li>✔ Clear understanding of price action behavior</li>
       <li>✔ Focus on discipline, process, and consistency</li>
       <li>✔ Community learning with serious traders only</li>
-      
     </ul>
 
-
-    <a class="cta"
-       href="https://telegram.me/+nKx68fGzJQ81YmM9"
-       target="_blank"
-       aria-label="Join free TradeHubFX Telegram education group">
-       Join Free Telegram Community
+    <!-- CTA BUTTON -->
+    <a class="cta" href="#" onclick="openTelegram(event)">
+      Join Free Telegram Community
     </a>
 
     <div class="note">
@@ -213,6 +209,32 @@ fbq('track', 'PageView');
 
   </div>
 </div>
+
+<!-- DEEP LINK + FALLBACK SCRIPT -->
+<script>
+function openTelegram(e){
+  e.preventDefault();
+
+  // Telegram Deep Link (App)
+  var deepLink = "tg://join?invite=nKx68fGzJQ81YmM9";
+
+  // Web Fallback
+  var webLink = "https://t.me/+nKx68fGzJQ81YmM9";
+
+  // Optional Meta Event
+  if (typeof fbq === "function") {
+    fbq('trackCustom','TelegramJoinClick');
+  }
+
+  // Try opening app
+  window.location.href = deepLink;
+
+  // Fallback after delay
+  setTimeout(function(){
+    window.location.href = webLink;
+  }, 1500);
+}
+</script>
 
 </body>
 </html>
