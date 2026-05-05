@@ -7,28 +7,18 @@
 
 <title>Gold Market Learning Community</title>
 
-<!-- SEO META -->
-
-<meta name="description" content="Join a free educational community to understand gold (XAUUSD) market behavior, price action concepts, and trading fundamentals in a beginner-friendly way.">
-
-<!-- Open Graph -->
+<meta name="description" content="Join a free educational community to understand gold (XAUUSD) market behavior and trading basics.">
 
 <meta property="og:title" content="Gold Market Learning Community">
-<meta property="og:description" content="Educational community focused on understanding gold market structure and trading concepts.">
+<meta property="og:description" content="Educational community focused on understanding gold market concepts.">
 <meta property="og:type" content="website">
-
-<!-- Font -->
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-:root{
-  --neon-blue:#00e5ff;
-}
+:root{--neon-blue:#00e5ff;}
 
-*{
-  box-sizing:border-box;
-}
+*{box-sizing:border-box;}
 
 body{
   margin:0;
@@ -51,15 +41,7 @@ body{
   border-radius:22px;
   padding:30px 24px;
   text-align:center;
-  box-shadow:
-    0 0 30px rgba(0,229,255,.15),
-    inset 0 0 20px rgba(255,255,255,.03);
-  animation:fadeUp .7s ease;
-}
-
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(25px)}
-  to{opacity:1;transform:none}
+  box-shadow:0 0 30px rgba(0,229,255,.15);
 }
 
 .logo{
@@ -78,11 +60,7 @@ body{
   object-fit:cover;
 }
 
-h1{
-  color:#fff;
-  font-size:24px;
-  margin:10px 0 5px;
-}
+h1{color:#fff;font-size:24px;margin:10px 0 5px;}
 
 .subtitle{
   color:#b2ebf2;
@@ -90,10 +68,7 @@ h1{
   margin-bottom:20px;
 }
 
-ul{
-  padding:0;
-  margin:20px 0;
-}
+ul{padding:0;margin:20px 0;}
 
 ul li{
   list-style:none;
@@ -102,7 +77,6 @@ ul li{
   background:#111;
   border-radius:10px;
   color:#e0f7fa;
-  font-size:14px;
 }
 
 .cta{
@@ -114,53 +88,38 @@ ul li{
   text-decoration:none;
   border-radius:14px;
   font-weight:700;
-  box-shadow:0 0 20px rgba(0,229,255,.6);
-  transition:.25s;
-}
-
-.cta:hover{
-  transform:translateY(-2px);
 }
 
 .note{
   font-size:11px;
   margin-top:15px;
   color:#aaa;
-  line-height:1.5;
 }
 
 .footer{
   font-size:11px;
   margin-top:18px;
   color:#888;
-  line-height:1.6;
 }
 
-.footer a{
-  color:#00e5ff;
-  text-decoration:none;
-}
+.footer a{color:#00e5ff;text-decoration:none;}
 </style>
 
 <!-- Meta Pixel -->
 
-<!-- Meta Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2236967133740242');
-fbq('track', 'PageView');
+s.parentNode.insertBefore(t,s)
+}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','2236967133740242');
+fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2236967133740242&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 
 </head>
 
@@ -170,7 +129,6 @@ src="https://www.facebook.com/tr?id=2236967133740242&ev=PageView&noscript=1"
   <div class="card">
 
 ```
-<!-- LOGO -->
 <div class="logo">
   <img src="tradehub.png" alt="Community Logo">
 </div>
@@ -194,7 +152,7 @@ src="https://www.facebook.com/tr?id=2236967133740242&ev=PageView&noscript=1"
 </a>
 
 <div class="note">
-  This platform provides educational content only. No financial or investment advice is given. No profit claims or guarantees are made. Trading involves risk.
+  This platform provides educational content only. No financial advice. Trading involves risk.
 </div>
 
 <div class="footer">
@@ -202,16 +160,12 @@ src="https://www.facebook.com/tr?id=2236967133740242&ev=PageView&noscript=1"
   <a href="https://elitepips.online/privacy/" target="_blank">Privacy</a> |
   <a href="https://elitepips.online/disclaimer/" target="_blank">Disclaimer</a>
   <br><br>
- 
-  <br>
   Not affiliated with Meta Platforms, Inc.
 </div>
 ```
 
   </div>
 </div>
-
-<!-- TELEGRAM SCRIPT -->
 
 <script>
 function openTelegram(e){
@@ -220,8 +174,9 @@ function openTelegram(e){
   var deepLink = "tg://join?invite=TTWFuSZq4JM5MGQ1";
   var webLink = "https://t.me/+TTWFuSZq4JM5MGQ1";
 
+  // ✅ SUBSCRIBE EVENT (STANDARD META EVENT)
   if (typeof fbq === "function") {
-    fbq('trackCustom','TelegramJoinClick');
+    fbq('track','Subscribe');
   }
 
   window.location.href = deepLink;
