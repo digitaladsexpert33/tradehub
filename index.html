@@ -1,17 +1,29 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gold Market Education</title>
 
-<!-- Google Font -->
+<title>Gold Market Learning Community</title>
+
+<!-- SEO META -->
+
+<meta name="description" content="Join a free educational community to understand gold (XAUUSD) market behavior, price action concepts, and trading fundamentals in a beginner-friendly way.">
+
+<!-- Open Graph -->
+
+<meta property="og:title" content="Gold Market Learning Community">
+<meta property="og:description" content="Educational community focused on understanding gold market structure and trading concepts.">
+<meta property="og:type" content="website">
+
+<!-- Font -->
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
   --neon-blue:#00e5ff;
-  --neon-soft:rgba(0,229,255,.6);
 }
 
 *{
@@ -25,7 +37,7 @@ body{
 }
 
 .wrapper{
-  min-height:100svh;
+  min-height:100vh;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -33,31 +45,30 @@ body{
 }
 
 .card{
-  max-width:440px;
+  max-width:420px;
   width:100%;
   background:linear-gradient(180deg,#050505,#0b0b0b);
-  border-radius:26px;
-  padding:36px 26px;
+  border-radius:22px;
+  padding:30px 24px;
   text-align:center;
   box-shadow:
-    0 0 40px rgba(0,229,255,.15),
-    inset 0 0 25px rgba(255,255,255,.03);
-  animation:fadeUp .9s ease forwards;
+    0 0 30px rgba(0,229,255,.15),
+    inset 0 0 20px rgba(255,255,255,.03);
+  animation:fadeUp .7s ease;
 }
 
 @keyframes fadeUp{
-  from{opacity:0;transform:translateY(30px) scale(.96)}
+  from{opacity:0;transform:translateY(25px)}
   to{opacity:1;transform:none}
 }
 
 .logo{
-  width:74px;
-  height:74px;
-  margin:0 auto 20px;
+  width:70px;
+  height:70px;
+  margin:0 auto 15px;
   border-radius:50%;
   padding:3px;
   background:linear-gradient(135deg,#00e5ff,#2979ff);
-  box-shadow:0 0 25px rgba(0,229,255,.8);
 }
 
 .logo img{
@@ -65,75 +76,64 @@ body{
   height:100%;
   border-radius:50%;
   object-fit:cover;
-  background:#000;
 }
 
 h1{
-  font-size:26px;
-  font-weight:700;
-  margin:0 0 6px;
   color:#fff;
-  text-shadow:0 0 14px var(--neon-blue);
+  font-size:24px;
+  margin:10px 0 5px;
 }
 
 .subtitle{
+  color:#b2ebf2;
   font-size:14px;
-  color:#e0f7fa;
-  margin-bottom:24px;
-  text-shadow:0 0 10px var(--neon-soft);
+  margin-bottom:20px;
 }
 
 ul{
-  list-style:none;
   padding:0;
-  margin:22px 0;
-  text-align:left;
+  margin:20px 0;
 }
 
 ul li{
-  font-size:14px;
-  padding:12px 14px;
-  margin-bottom:12px;
-  background:rgba(255,255,255,.04);
-  border-radius:14px;
+  list-style:none;
+  padding:11px;
+  margin-bottom:10px;
+  background:#111;
+  border-radius:10px;
   color:#e0f7fa;
-  text-shadow:0 0 8px var(--neon-soft);
-  box-shadow:inset 0 0 12px rgba(0,229,255,.08);
+  font-size:14px;
 }
 
 .cta{
   display:block;
-  margin-top:26px;
+  margin-top:20px;
+  padding:15px;
   background:linear-gradient(135deg,#00e5ff,#2979ff);
   color:#000;
   text-decoration:none;
-  padding:16px;
-  border-radius:16px;
-  font-size:15px;
+  border-radius:14px;
   font-weight:700;
-  letter-spacing:.4px;
-  box-shadow:
-    0 0 25px rgba(0,229,255,.9),
-    0 0 50px rgba(0,229,255,.6);
-  transition:.25s ease;
+  box-shadow:0 0 20px rgba(0,229,255,.6);
+  transition:.25s;
 }
 
 .cta:hover{
-  transform:translateY(-2px) scale(1.02);
+  transform:translateY(-2px);
 }
 
 .note{
-  margin-top:18px;
   font-size:11px;
-  color:#b0bec5;
-  line-height:1.6;
+  margin-top:15px;
+  color:#aaa;
+  line-height:1.5;
 }
 
 .footer{
-  margin-top:20px;
   font-size:11px;
-  color:#90a4ae;
-  line-height:1.7;
+  margin-top:18px;
+  color:#888;
+  line-height:1.6;
 }
 
 .footer a{
@@ -143,6 +143,7 @@ ul li{
 </style>
 
 <!-- Meta Pixel -->
+
 <script>
 !function(f,b,e,v,n,t,s){
 if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -152,14 +153,10 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)
 }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
 fbq('init','4290254534550958');
 fbq('track','PageView');
 </script>
-
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4290254534550958&ev=PageView&noscript=1"/>
-</noscript>
 
 </head>
 
@@ -168,77 +165,66 @@ src="https://www.facebook.com/tr?id=4290254534550958&ev=PageView&noscript=1"/>
 <div class="wrapper">
   <div class="card">
 
-    <div class="logo">
-      <img src="tradehub.png" alt="TradeHubFX Logo" loading="lazy">
-    </div>
+```
+<!-- LOGO -->
+<div class="logo">
+  <img src="tradehub.png" alt="Community Logo">
+</div>
 
-    <h1>TradeHubFX</h1>
-    <div class="subtitle">
-      Educational Gold Market Community for Serious Traders
-    </div>
+<h1>Gold Market Learning</h1>
 
-    <ul>
-      <li>✔ Structured approach to observing the XAUUSD market</li>
-      <li>✔ Rule-based execution and decision-making logic</li>
-      <li>✔ Clear understanding of price action behavior</li>
-      <li>✔ Focus on discipline, process, and consistency</li>
-      <li>✔ Community learning with serious traders only</li>
-    </ul>
+<div class="subtitle">
+  Educational community focused on understanding XAUUSD concepts
+</div>
 
-    <!-- CTA BUTTON -->
-    <a class="cta" href="https://t.me/+q8ewpeUReKMzZWVl" onclick="openTelegram(event)">
-      Join Free Telegram Community
-    </a>
+<ul>
+  <li>✔ Learn gold market basics</li>
+  <li>✔ Understand price action concepts</li>
+  <li>✔ Focus on discipline & consistency</li>
+  <li>✔ Educational discussions only</li>
+</ul>
 
-    <div class="note">
-      This platform is for educational purposes only.  
-      We do not provide financial advice, investment recommendations, or profit guarantees.  
-      Trading involves risk and may not be suitable for all individuals.
-    </div>
+<!-- CTA -->
+<a class="cta" href="https://t.me/+TTWFuSZq4JM5MGQ1" onclick="openTelegram(event)">
+  Join Free Learning Group
+</a>
 
-    <div class="footer">
-      <div>
-        <a href="https://elitepips.online/terms/" target="_blank">Terms</a> |
-        <a href="https://elitepips.online/privacy/" target="_blank">Privacy</a> |
-        <a href="https://elitepips.online/disclaimer/" target="_blank">Disclaimer</a>
-      </div>
-      <div>
-        Managed by 
-        <a href="https://t.me/+2L9idwqcixg2OTZl" target="_blank">
-          ShriRam Media Agency
-        </a>
-      </div>
-      <div>
-        Not affiliated with Meta Platforms, Inc.
-      </div>
-    </div>
+<div class="note">
+  This platform provides educational content only. No financial or investment advice is given. No profit claims or guarantees are made. Trading involves risk.
+</div>
+
+<div class="footer">
+  <a href="https://elitepips.online/terms/" target="_blank">Terms</a> |
+  <a href="https://elitepips.online/privacy/" target="_blank">Privacy</a> |
+  <a href="https://elitepips.online/disclaimer/" target="_blank">Disclaimer</a>
+  <br><br>
+ 
+  <br>
+  Not affiliated with Meta Platforms, Inc.
+</div>
+```
 
   </div>
 </div>
 
-<!-- DEEP LINK + FALLBACK SCRIPT -->
+<!-- TELEGRAM SCRIPT -->
+
 <script>
 function openTelegram(e){
   e.preventDefault();
 
-  // Telegram Deep Link (App)
   var deepLink = "tg://join?invite=q8ewpeUReKMzZWVl";
-
-  // Web Fallback
   var webLink = "https://t.me/+q8ewpeUReKMzZWVl";
 
-  // Optional Meta Event
   if (typeof fbq === "function") {
     fbq('trackCustom','TelegramJoinClick');
   }
 
-  // Try opening app
   window.location.href = deepLink;
 
-  // Fallback after delay
   setTimeout(function(){
     window.location.href = webLink;
-  }, 1500);
+  },1500);
 }
 </script>
 
